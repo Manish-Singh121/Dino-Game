@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<conio.h>
 #include<time.h>
@@ -15,7 +16,11 @@ coord.Y = y;
 SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);  }
 void how_to_play()
 {
-   gotoxy(20,5); cout<<"1. Press spacebar for jump \n";
+   system("Color 34");//choose a suitable Color X,Y is screen,text
+   gotoxy(20,4); cout<<" Our Dino is in a hurry ";
+   gotoxy(20,5); cout<<" Help him reach faster by avoiding various obstacles";
+   gotoxy(20,6); cout<<" Press spacebar for jump them \n";
+   gotoxy(20,7); cout<<" Now hurry, dino is waiting for your help";
    getch();
 }
 
@@ -24,6 +29,7 @@ int main()
 //setcursor(0,0);
 do{
 system("cls");
+system("Color 07");//choose a suitable Color X,Y is screen,text
 gotoxy(10,5); cout<< " -------------------------------------------------------------------";
 gotoxy(10,6);cout<<"|                           DINO RUN                                |";
 gotoxy(10,7); cout<< " -------------------------------------------------------------------";
